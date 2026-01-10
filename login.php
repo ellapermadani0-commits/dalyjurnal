@@ -15,12 +15,12 @@ if (isset($_SESSION['username'])) {
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Comfortcorner</title>
+    <title>My Daily Journal</title>
     <link rel="icon" href="img/logo.png" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
-  <body class="bg-primary-subtle">
+  <body class="bg-danger-subtle">
       
     <div class="container mt-5 pt-5">
         <div class="row">  
@@ -29,7 +29,7 @@ if (isset($_SESSION['username'])) {
                     <div class="card-body">
                         <div class="text-center mb-3">
                             <i class="bi bi-person-circle h1 display-4"></i>
-                            <p>Welcome to My Confort Corner</p>
+                            <p>Welcome to My Daily Journal</p>
                             <hr />
                         </div>
                         <form action="" method="post" id="loginform">
@@ -48,7 +48,7 @@ if (isset($_SESSION['username'])) {
                                 placeholder="Password"
                             />
                             <div class="text-center my-3 d-grid">
-                                <button class="btn btn-primary rounded-4">Login</button>
+                                <button class="btn btn-danger rounded-4">Login</button>
                             </div>
                             <p id="errorMsg" class="text-danger"></p>
                         </form>

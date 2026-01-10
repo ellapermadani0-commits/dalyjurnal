@@ -136,7 +136,7 @@ if (isset($_POST['simpan'])) {
                 unlink("img/" . $_POST['gambar_lama']);
             }
     
-            $stmt = $conn->prepare("UPDATE articel 
+            $stmt = $conn->prepare("UPDATE article 
                                     SET 
                                     judul =?,
                                     isi =?,
@@ -149,7 +149,7 @@ if (isset($_POST['simpan'])) {
             $simpan = $stmt->execute();
         } else {
                 //jika tidak ada id, lakukan insert data baru
-            $stmt = $conn->prepare("INSERT INTO articel (judul,isi,gambar,tanggal,username)
+            $stmt = $conn->prepare("INSERT INTO article (judul,isi,gambar,tanggal,username)
                                     VALUES (?,?,?,?,?)");
     
             $stmt->bind_param("sssss", $judul, $isi, $gambar, $tanggal, $username);
@@ -182,7 +182,7 @@ if (isset($_POST['hapus'])) {
         unlink("img/" . $gambar);
     }
 
-    $stmt = $conn->prepare("DELETE FROM articel WHERE id =?");
+    $stmt = $conn->prepare("DELETE FROM article WHERE id =?");
 
     $stmt->bind_param("i", $id);
     $hapus = $stmt->execute();

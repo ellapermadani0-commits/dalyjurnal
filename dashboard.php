@@ -1,6 +1,6 @@
 <?php
 //query untuk mengambil data article
-$sql1 = "SELECT * FROM articel ORDER BY tanggal DESC";
+$sql1 = "SELECT * FROM article ORDER BY tanggal DESC";
 $hasil1 = $conn->query($sql1);
 
 //menghitung jumlah baris data article

@@ -16,13 +16,13 @@ include "koneksi.php";
     <!-- Nav begin -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container">
-          <a class="navbar-brand" href="#">My Comfort Corner</a>
+          <a class="navbar-brand" href="#">My Daily Journal</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="d-flex gap-2 ms-auto order-lg-last">
             <button id="darkBtn" class="btn btn-dark"><i class="bi bi-moon"></i></button>
-            <button id="lightBtn" class="btn btn-primary bg-primary-subtle text-dark"><i class="bi bi-sun"></i></button>
+            <button id="lightBtn" class="btn btn-danger bg-danger-subtle text-dark"><i class="bi bi-sun"></i></button>
           </div>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-dark">
@@ -45,16 +45,16 @@ include "koneksi.php";
     <!-- Nav End -->
 
     <!-- hero begin -->
-     <section id="hero" class="text-center p-5 bg-primary-subtle text-sm-start">
+     <section id="hero" class="text-center p-5 bg-danger-subtle text-sm-start">
         <div class="container">
             <div class="d-sm-flex flex-sm-row-reverse align-items-center">
-                <img src="img/photo-1630910627747-299d3bc50b4d.avif" class="img-fluid"  width="300">
+                <img src="img/IMG_4784.JPG" class="img-fluid"  width="300">
                 <div>
                     <h1 class="fw-bold display-4">
-                        Here, it's all about the cozy feeling
+                        pemandangan yang sangat indah ,se indah janji pertama awal kenal kamu 
                     </h1>
                     <h4 class="lead display-5">
-                        Tentang diriku, hobi, dan hal-hal yang bikin happy.
+                        tentang dia aku dan kmu 
                     </h4>
                     <span id="tanggal"></span>
                     <span id="jam"></span>
@@ -70,7 +70,7 @@ include "koneksi.php";
             <h1 class="fw-bold display-4 pb-3">article</h1>
             <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
             <?php
-            $sql = "SELECT * FROM articel ORDER BY tanggal DESC";
+            $sql = "SELECT * FROM article ORDER BY tanggal DESC";
             $hasil = $conn->query($sql); 
 
             while($row= $hasil->fetch_assoc()){
@@ -101,25 +101,25 @@ include "koneksi.php";
     <!-- articel end -->
 
     <!-- gallery begin -->
-     <section id="gallery" class="text-center p-5 bg-primary-subtle">
+     <section id="gallery" class="text-center p-5 bg-denger-subtle">
         <div class="container">
             <h1 class="fw-bold display-4 pb-3">Gallery</h1>
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="img/WhatsApp Image 2025-10-28 at 21.31.30_273da9db.jpg" class="d-block w-100" alt="...">
+                    <img src="img/7ec1392e-fb9c-486a-bd16-f35741399a5d.jpg" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="img/WhatsApp Image 2025-10-28 at 21.52.20_8bfd2cc8.jpg" class="d-block w-100" alt="...">
+                    <img src="img/14acaddd-e62b-45a7-889e-e59719835cb6.jpg" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="img/WhatsApp Image 2025-10-28 at 22.11.35_1dee4f42.jpg" class="d-block w-100" alt="...">
+                    <img src="img/52cc7cd6-6f1d-4a8e-91a3-dba76a671da3.jpg" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="img/WhatsApp Image 2025-10-28 at 22.13.46_750b29bb.jpg" class="d-block w-100" alt="...">
+                    <img src="img/59dee5e2-e15f-4e70-ae72-683e6d7a7234.jpg" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="img/galery.jpg" class="d-block w-100" alt="...">
+                    <img src="img/417bf556-8a6d-4f8f-b5f0-a494030a22b1.jpg" class="d-block w-100" alt="...">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -138,12 +138,12 @@ include "koneksi.php";
     <!-- footer begin -->
      <footer class="text-center p-5">
         <div>
-           <a href="https://www.instagram.com/zx.skia?igsh=OHU0czRqeHM4czh4"><i class="bi bi-instagram h2 p-2 text-dark"></i></a>
-           <a href="https://www.tiktok.com/@kiaxia_xx?_t=ZS-90viVTcoEWe&_r=1"><i class="bi bi-tiktok h2 p-2 text-dark"></i></a>
-           <a href="https://wa.me/+6288226797310"><i class="bi bi-whatsapp h2 p-2 text-dark"></i></a>
+           <a href="https://www.instagram.com/_itsnoteella?igsh=ZWJtcXN6Z251amUz"><i class="bi bi-instagram h2 p-2 text-dark"></i></a>
+           <a href="https://www.tiktok.com/@yyyuuuhhh80?_r=1&_t=ZS-92x1qeZ9w7J"><i class="bi bi-tiktok h2 p-2 text-dark"></i></a>
+           <a href="https://wa.me/+62895342011950"><i class="bi bi-whatsapp h2 p-2 text-dark"></i></a>
         </div>
         <div>
-            Zaskia Lu'lu' Ilma &copy; 2025
+            Ella nuraini permadani  &copy; 2025
         </div>
      </footer>
     <!-- footer end -->
@@ -151,7 +151,7 @@ include "koneksi.php";
     <!--Tombol Back to Top-->
       <button
         id="backToTop"
-        class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-3 d-none"
+        class="btn btn-danger rounded-circle position-fixed bottom-0 end-0 m-3 d-none"
       >
         <i class="bi bi-arrow-up" title="Back to Top"></i>
       </button>
@@ -173,7 +173,7 @@ include "koneksi.php";
 
         function cleanBgTextClasses(el) {
           el.classList.remove(
-            "bg-primary", "bg-primary-subtle", "bg-white", "bg-dark", "bg-secondary", "bg-black", "bg-body-tertiary",
+            "bg-danger", "bg-danger-subtle", "bg-white", "bg-dark", "bg-secondary", "bg-black", "bg-body-tertiary",
             "text-light", "text-dark"
           );
         }
@@ -215,11 +215,11 @@ include "koneksi.php";
               icon.classList.add("text-light");
             });
 
-            backToTopBtn.classList.remove("btn-primary");
+            backToTopBtn.classList.remove("btn-danger");
             backToTopBtn.classList.add("btn-light"); 
 
             scheduleIcons.forEach(icon => {
-            icon.classList.remove("text-primary");
+            icon.classList.remove("text-danger");
             icon.classList.add("text-light");
             });
 
@@ -230,13 +230,13 @@ include "koneksi.php";
             document.body.classList.add("bg-white", "text-dark");
       
             cleanBgTextClasses(hero);
-            hero.classList.add("bg-primary-subtle", "text-dark");
+            hero.classList.add("bg-danger-subtle", "text-dark");
       
             cleanBgTextClasses(article);
             article.classList.add("bg-white", "text-dark");
     
             cleanBgTextClasses(gallery);
-            gallery.classList.add("bg-primary-subtle", "text-dark");
+            gallery.classList.add("bg-danger-subtle", "text-dark");
       
             cleanBgTextClasses(footer);
             footer.classList.remove("bg-black", "text-light");
@@ -263,7 +263,7 @@ include "koneksi.php";
             });
 
             backToTopBtn.classList.remove("btn-light");
-            backToTopBtn.classList.add("btn-primary");;
+            backToTopBtn.classList.add("btn-danger");;
 
             localStorage.setItem("theme", "light");
           }

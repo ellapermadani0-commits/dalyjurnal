@@ -13,7 +13,7 @@ if (!isset($_SESSION['username'])) {
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Comfortcorner | Admin</title>
+    <title>My Daily Journal | Admin</title>
 	<link rel="icon" href="img/logo.png" />
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
@@ -31,9 +31,9 @@ if (!isset($_SESSION['username'])) {
 </head>
   <body>
     <!-- nav begin -->
-		<nav class="navbar navbar-expand-sm bg-body-tertiary sticky-top bg-primary-subtle">
+		<nav class="navbar navbar-expand-sm bg-body-tertiary sticky-top bg-danger-subtle">
 		<div class="container">
-			<a class="navbar-brand" target="_blank" href=".">Comfortcorner</a>
+			<a class="navbar-brand" target="_blank" href=".">My Daily Journal</a>
 			<button
 			class="navbar-toggler"
 			type="button"
@@ -83,13 +83,13 @@ if (!isset($_SESSION['username'])) {
     </section>
     <!-- content end -->
 	<!-- footer begin -->
-		<footer class="text-center p-3 bg-primary-subtle">
+		<footer class="text-center p-3 bg-danger-subtle">
 			<div>
 				<a href="https://www.instagram.com/udinusofficial"><i class="bi bi-instagram h2 p-2 text-dark"></i></a>
 				<a href="https://twitter.com/udinusofficial"><i class="bi bi-twitter h2 p-2 text-dark"></i></a>
 				<a href="https://wa.me/+62812685577"><i class="bi bi-whatsapp h2 p-2 text-dark"></i></a>
 			</div>
-			<div>Zaskia Lu'lu' Ilma &copy; 2025</div>
+			<div>Ella nuraini permadani &copy; 2025</div>
     	</footer>
     <!-- footer end -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
