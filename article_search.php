@@ -3,7 +3,7 @@
 
     $keyword = $_POST['keyword'];
     
-    $sql = "SELECT * FROM article 
+    $sql = "SELECT * FROM article
             WHERE judul LIKE ? OR isi LIKE ? OR tanggal LIKE ? OR username LIKE ?
             ORDER BY tanggal DESC";
     

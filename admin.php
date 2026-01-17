@@ -13,7 +13,7 @@ if (!isset($_SESSION['username'])) {
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Daily Journal | Admin</title>
+    <title>Comfortcorner | Admin</title>
 	<link rel="icon" href="img/logo.png" />
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
@@ -33,7 +33,7 @@ if (!isset($_SESSION['username'])) {
     <!-- nav begin -->
 		<nav class="navbar navbar-expand-sm bg-body-tertiary sticky-top bg-danger-subtle">
 		<div class="container">
-			<a class="navbar-brand" target="_blank" href=".">My Daily Journal</a>
+			<a class="navbar-brand" target="_blank" href=".">my dailyjournal</a>
 			<button
 			class="navbar-toggler"
 			type="button"
@@ -53,12 +53,16 @@ if (!isset($_SESSION['username'])) {
 				<li class="nav-item">
 					<a class="nav-link" href="admin.php?page=article">Article</a>
 				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="admin.php?page=galeri">Galeri</a>
+				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle text-danger fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						<?= $_SESSION['username']?>
 					</a>
 					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="logout.php">Logout</a></li> 
+						<li><a class="dropdown-item" href="admin.php?page=profil">Profil</a></li>
+						<li><a class="dropdown-item" href="logout.php">Logout</a></li>  
 					</ul>
 				</li> 
 			</ul>
@@ -76,7 +80,7 @@ if (!isset($_SESSION['username'])) {
                 $page = "dashboard";
             }
 
-            echo '<h4 class="lead display-6 pb-2 border-bottom border-primary-subtle">' . $page . '</h4>';
+            echo '<h4 class="lead display-6 pb-2 border-bottom border-danger-subtle">' . $page . '</h4>';
             include($page . ".php");
             ?>
         </div> 
