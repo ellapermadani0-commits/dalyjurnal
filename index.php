@@ -101,7 +101,7 @@ include "koneksi.php";
     <!-- articel end -->
 
     <!-- gallery begin -->
-    <section id="gallery" class="p-5 bg-primary-subtle">
+    <section id="gallery" class="p-5 bg-danger-subtle">
     <div class="container">
         <h1 class="fw-bold display-4 pb-3 text-center">Gallery</h1>
         <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
